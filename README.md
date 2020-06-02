@@ -6,7 +6,9 @@ Tradin' Buddy is on open source, web-based trading systems. It runs on your loca
 
 ## Prerequisites
 To easily mount Tradin' Buddy onto your localhost, you'll need to download an npm package. Simply run the following command.
-`npm install --global http-server`
+```
+npm install --global http-server
+```
 
 Make sure you have Node.js and NPM installed on your machine, or this command will not work.
 
@@ -16,11 +18,15 @@ This is a step-by-step tutorial demonstrating how to run Tradin'Buddy on your PC
 
 #### Step 1
 Copy the gitHub directory over to your local machine using the command
-`git clone https://github.com/bigbernnn/tradin-buddy.git`
+```
+git clone https://github.com/bigbernnn/tradin-buddy.git
+```
 
 #### Step 2
 In the directory run the following command to mount Tradin' Buddy onto your localhost:8080
-`npx http-server -c-1`
+```
+npx http-server -c-1
+```
 
 #### Step 3
 In your browser, type localhost:8080.
