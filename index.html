@@ -13,17 +13,66 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="/css/styles.css">
     <!--FONTS-->
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Tera&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
     <title>Tradin' Buddy</title>
     
   </head>
   <body>
     <nav id="top-navbar" class="navbar navbar-light bg-light">
-        <a class="navbar-brand" href="#">
-          <img src="/images/github.png" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
-          Github
+        <a class="navbar-brand" href="https://github.com/bigbernnn/tradin-buddy" target="_blank">
+            <img src="/images/github.png" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
+            View on Github
         </a>
-      </nav>
+    </nav>
+    <div class="row">
+        <ul class="list-group list-group-flush" id="admin-sidebar">
+            <li class="admin-sidebar-item" style="margin-bottom: 0px;">
+                <h3 id="product-name">Tradin' Buddy</h3>
+            </li>
+            <li class="admin-sidebar-item">
+                <hr class="navbar-separator">
+            </li>
+            <li class="admin-sidebar-item" id="dashboard-link">
+                <ion-icon name="desktop" id="dashboard-icon"></ion-icon>
+                Dashboard
+            </li>
+            <li class="admin-sidebar-item" id="portfolio-link">
+                <ion-icon name="pie-chart" id="portfolio-icon"></ion-icon> 
+                Portfolio
+            </li>
+            <li class="admin-sidebar-item">
+                <hr class="navbar-separator">
+            </li>
+            <li class="admin-sidebar-item" id="news-link">
+                <ion-icon name="newspaper" id="news-icon"></ion-icon>
+                News
+            </li>
+            <li class="admin-sidebar-item">
+                <hr class="navbar-separator">
+            </li>
+            <li class="admin-sidebar-item" id="docs-link">
+                <ion-icon name="document" id="docs-icon"></ion-icon>
+                Docs
+            </li>
+            <li class="admin-sidebar-item" id="settings-link">
+                <ion-icon name="settings" id="settings-icon"></ion-icon>
+                Settings
+            </li>
+            <li class="admin-sidebar-item">
+                <button id="min-sidebar-button" type="button">
+                    <ion-icon name="arrow-back" style="font-size: 50px; margin-left: 75px; margin-top: 50px;"></ion-icon>
+                </button>
+            </li>
+           
+        </ul>
+        <div id="content">
+            
+        </div>
+    </div>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script type="module" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule="" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.js"></script>      
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
   </body>

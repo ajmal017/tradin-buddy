@@ -1,3 +1,42 @@
 #top-navbar {
-    border-bottom: 3px solid #36b9cc;
+    border-bottom: 3px solid #287d8a;
+    font-family: 'Righteous', cursive;
+}
+
+#admin-sidebar {
+    background-color: #49d6eb;
+    width: 250px;
+    min-height: 100vh;
+    list-style-type: none;
+    margin-left: 15px;
+}
+
+#product-name {
+    color: #eeeeee;
+    margin-left: 25px;
+    margin-top: 25px; 
+    font-family: 'Lexend Tera', sans-serif;
+    
+}
+.admin-sidebar-item {
+    color: #eeeeee;
+    margin-left: 10px;
+    margin-bottom: 25px;
+    font-family: 'Righteous', cursive;
+}
+
+#content {
+    flex: 1;
+}
+
+.navbar-separator {
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+#min-sidebar-button {
+    color: #eeeeee;
+    padding: 0;
+    border: none;
+    background: none;   
 }
