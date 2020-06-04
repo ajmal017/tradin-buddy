@@ -33,6 +33,13 @@ In your browser, type localhost:8080.
 Now you are ready to configure your Tradn' Buddy!
 
 ## Configuration
+In the root directory create a file named *creadentials.txt*. In this file you will store your api keys. The content of the file should be as follows.
+
+```
+YAHOO_FINANCE_KEY=API_KEY
+INTERACTIVE_BROKERS_KEY=API_KEY
+```
+*API_KEY* should be replaced with the corresponding keys you've obtained by creating your personnal accounts.
 
 ## Features
 
