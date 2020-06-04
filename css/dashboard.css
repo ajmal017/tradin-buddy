@@ -1,0 +1,71 @@
+#dashboard-header-label {
+    font-family: 'Righteous', cursive;
+}
+
+#search-stx-container {
+    flex: 1;
+    background-color: white;
+    margin-left: 25px;
+    margin-right: 25px;
+    border: solid #999999;
+    border-width: 2px;
+    border-radius: 5px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding-bottom: 100px;
+}
+
+#query-header-label {
+    font-family: 'Cantarell', sans-serif;
+    font-size: 32px;
+    color: #444444;
+}
+
+#order-stx-container {
+    flex: 1;
+    background-color: white;
+    margin-left: 25px;
+    margin-right: 25px;
+    border: solid #999999;
+    border-width: 2px;
+    border-radius: 5px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding-bottom: 100px;
+}
+
+#order-header-label {
+    font-family: 'Cantarell', sans-serif;
+    font-size: 32px;
+    color: #444444;
+}
+
+#search-header{
+    border-bottom: 2px solid #999999;
+}
+
+#order-header {
+    border-bottom: 2px solid #999999;
+}
+
+#input-group-search {
+    margin-left: 25px;
+    margin-top: 5px;
+    width: 300px;
+}
+
+#button-ticker-search {
+    border: 2px solid #287d8a;
+    border-radius: 2px;;
+    color: #287d8a;
+    margin-left: 10px;
+    font-family: 'Cantarell', sans-serif;
+}
+
+#dash-search-label {
+    margin-left: 25px;
+    margin-top: 20px;
+    font-family: 'Righteous', cursive;
+}

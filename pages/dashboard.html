@@ -1,0 +1,31 @@
+<nav id="header" class="navbar navbar-light bg-light">
+    <h1 id="dashboard-header-label">Dashboard</h1>
+</nav>
+<div id="search-stx-container">
+    <nav id="search-header" class="navbar navbar-light bg-light">
+        <h3 id="query-header-label">
+            <ion-icon name="stats-chart-outline"></ion-icon>
+            Query
+        </h3>
+    </nav>
+    <!--TODO: input field (ticker symbol) with results (max: 10) in horizontal tableview-->
+    <h5 id="dash-search-label">Search Stock</h5>
+    <div id="input-group-search" class="input-group mb-3">
+        <input id="ticker-search-field" type="text" class="form-control" placeholder="Choose ticker symbol..." aria-label="Choose ticket symbol" aria-describedby="button-ticker-search">
+        <div class="input-group-prepend">
+            <button class="btn btn-outline-secondary" type="button" id="button-ticker-search">Search</button>
+        </div>
+    </div>
+    <hr class="my-4">
+    <div id="stock-graph-container"></div>
+</div>
+<hr class="my-4">
+<div id="order-stx-container">
+    <nav id="order-header" class="navbar navbar-light bg-light">
+        <h3 id="order-header-label">
+            <ion-icon name="wallet-outline"></ion-icon>
+            Order
+        </h3>
+    </nav>
+</div>
+<script src="../scripts/dashboard.js"></script>

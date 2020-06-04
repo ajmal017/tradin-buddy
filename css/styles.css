@@ -34,9 +34,9 @@
     margin-right: 25px;
 }
 
-#min-sidebar-button {
-    color: #eeeeee;
+.navbar-button {
     padding: 0;
     border: none;
-    background: none;   
+    background: none;
+    color: #eeeeee; 
 }

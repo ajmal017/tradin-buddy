@@ -9,12 +9,22 @@
     <!--JQuery-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="/scripts/index.js"></script>
+    
+    
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="/css/styles.css">
+    <!--PAGES CSS-->
+    <link rel="stylesheet" type="text/css" href="/css/dashboard.css">
+    <link rel="stylesheet" type="text/css" href="/css/portfolio.css">
+    <link rel="stylesheet" type="text/css" href="/css/news.css">
+    <link rel="stylesheet" type="text/css" href="/css/docs.css">
+    <link rel="stylesheet" type="text/css" href="/css/settings.css">
     <!--FONTS-->
     <link href="https://fonts.googleapis.com/css2?family=Lexend+Tera&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cantarell&display=swap" rel="stylesheet">
+    
     <title>Tradin' Buddy</title>
     
   </head>
@@ -34,41 +44,49 @@
                 <hr class="navbar-separator">
             </li>
             <li class="admin-sidebar-item" id="dashboard-link">
-                <ion-icon name="desktop" id="dashboard-icon"></ion-icon>
-                Dashboard
+                <button class="navbar-button" id="dashboard-sidebar-button" type="button">
+                    <ion-icon name="desktop" id="dashboard-icon"></ion-icon>
+                    Dashboard
+                </button>
             </li>
             <li class="admin-sidebar-item" id="portfolio-link">
-                <ion-icon name="pie-chart" id="portfolio-icon"></ion-icon> 
-                Portfolio
+                <button class="navbar-button" id="portfolio-sidebar-button" type="button">
+                    <ion-icon name="pie-chart" id="portfolio-icon"></ion-icon> 
+                    Portfolio
+                </button>
             </li>
             <li class="admin-sidebar-item">
                 <hr class="navbar-separator">
             </li>
             <li class="admin-sidebar-item" id="news-link">
-                <ion-icon name="newspaper" id="news-icon"></ion-icon>
-                News
+                <button class="navbar-button" id="news-sidebar-button" type="button">
+                    <ion-icon name="newspaper" id="news-icon"></ion-icon>
+                    News
+                </button>
             </li>
             <li class="admin-sidebar-item">
                 <hr class="navbar-separator">
             </li>
             <li class="admin-sidebar-item" id="docs-link">
-                <ion-icon name="document" id="docs-icon"></ion-icon>
-                Docs
+                <button class="navbar-button" id="docs-sidebar-button" type="button">
+                    <ion-icon name="document" id="docs-icon"></ion-icon>
+                    Docs
+                </button>
             </li>
             <li class="admin-sidebar-item" id="settings-link">
-                <ion-icon name="settings" id="settings-icon"></ion-icon>
-                Settings
+                <button class="navbar-button" id="settings-sidebar-button" type="button">
+                    <ion-icon name="settings" id="settings-icon"></ion-icon>
+                    Settings
+                </button>
             </li>
             <li class="admin-sidebar-item">
-                <button id="min-sidebar-button" type="button">
+                <button class="navbar-button" id="min-sidebar-button" type="button">
                     <ion-icon name="arrow-back" style="font-size: 50px; margin-left: 75px; margin-top: 50px;"></ion-icon>
                 </button>
             </li>
            
         </ul>
-        <div id="content">
-            
-        </div>
+        <div id="content"></div>
     </div>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script type="module" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.esm.js"></script>

@@ -1,4 +1,25 @@
+// method to load contents from other hmtl: $('#content').load("../abc.html");
 $(document).ready(function(){
+    
+    reloadPage('dashboard');
+
+    $('#dashboard-sidebar-button').click(function() {
+        reloadPage('dashboard');
+    });
+    $('#portfolio-sidebar-button').click(function() {
+        reloadPage('portfolio');
+    });
+    $('#news-sidebar-button').click(function() {
+        reloadPage('news');
+    });
+    $('#docs-sidebar-button').click(function() {
+        reloadPage('docs');
+    });
+    $('#settings-sidebar-button').click(function() {
+        reloadPage('settings');
+    });
+
+
     $('#min-sidebar-button').click(function() {
         const ANIMATION_DURATION = 300;
         var button = $('#min-sidebar-button');
@@ -9,12 +30,14 @@ $(document).ready(function(){
         var sidebarNews = {li: $('#news-link'), min: '<ion-icon name="newspaper" id="news-icon" style="font-size: 50px; margin-left: 25px;"></ion-icon>', exp: '<ion-icon name="newspaper" id="news-icon"></ion-icon>News'}
         var sidebarDocs = {li: $('#docs-link'), min: '<ion-icon name="document" id="docs-icon" style="font-size: 50px; margin-left: 25px;"></ion-icon>', exp: '<ion-icon name="document" id="docs-icon"></ion-icon>Docs'}
         var sidebarSetup = {li: $('#settings-link'), min: '<ion-icon name="settings" id="settings-icon" style="font-size: 50px; margin-left: 25px;"></ion-icon>', exp: '<ion-icon name="settings" id="settings-icon"></ion-icon>Settings'}
-        var sidebarLinks = [sidebarDashboard, sidebarPortfolio, sidebarNews, sidebarDocs, sidebarSetup]
+        var arrow = {li: $('#min-sidebar-button'), min: '<ion-icon name="add-outline" style="font-size: 60px; margin-left: 75px; margin-top: 50px;"></ion-icon>', exp: '<ion-icon name="arrow-back" style="font-size: 50px; margin-left: 75px; margin-top: 50px;"></ion-icon>'}
+        var sidebarLinks = [sidebarDashboard, sidebarPortfolio, sidebarNews, sidebarDocs, sidebarSetup, arrow]
         
         if(sidebar.width() == 250) {
             sidebar.animate({
-                width: 100,
+                width: 125,
             },{duration: ANIMATION_DURATION, queue: false});
+            
             button.animate({
                 marginLeft: '-=' + 60
             }, {duration: ANIMATION_DURATION, queue: false});
@@ -38,5 +61,27 @@ $(document).ready(function(){
                 element.li.append(element.exp);
             });
         }
-    });
+    });    
 });
+
+
+function reloadPage (pageName) {
+    var contentDiv = $('#content');
+    switch(pageName) {
+        case 'dashboard':
+            contentDiv.load('../pages/dashboard.html');
+            break;
+        case 'portfolio':
+            contentDiv.load('../pages/portfolio.html');
+            break;
+        case 'news':
+            contentDiv.load('../pages/news.html');
+            break;
+        case 'docs':
+            contentDiv.load('../pages/docs.html');
+            break;
+        case 'settings':
+            contentDiv.load('../pages/settings.html');
+            break;
+    }
+}
