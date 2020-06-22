@@ -47,6 +47,9 @@ GOOGLE_NEWS_API=API_KEY
 ```
 *API_KEY* should be replaced with the corresponding keys you've obtained by creating your personnal accounts.
 
+#### [Configuring the IBKR Web API](https://interactivebrokers.github.io/cpwebapi/)
+Follow the instructions at the top of the "Getting Started" tab, copy the downoaded "clientportal" folder to the root directory of your projects and follow the next steps.
+
 ## Features
 
 Tradin' Buddy is currently under contruction and we will continue to add new features steadily once it is done. 
