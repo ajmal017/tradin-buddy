@@ -12,6 +12,11 @@ npm install --global http-server
 
 Make sure you have Node.js and NPM installed on your machine, or this command will not work.
 
+Get API keys from the following sources
+[1. Alpha Vantage](https://www.alphavantage.co)
+[2. Interactive Brokers](https://interactivebrokers.github.io/cpwebapi/)
+[3. News Api](https://newsapi.org)
+
 ## Running Tradin' Buddy
 
 This is a step-by-step tutorial demonstrating how to run Tradin'Buddy on your PC.
@@ -38,6 +43,7 @@ In the root directory create a file named *creadentials.txt*. In this file you w
 ```
 ALPHA_VANTAGE_KEY=API_KEY
 INTERACTIVE_BROKERS_KEY=API_KEY
+GOOGLE_NEWS_API=API_KEY
 ```
 *API_KEY* should be replaced with the corresponding keys you've obtained by creating your personnal accounts.
 
