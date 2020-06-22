@@ -1,6 +1,43 @@
+<!--TODO: Refresh and onLoad with integrate with IBKR-->
 <nav id="header" class="navbar navbar-light bg-light">
     <h1 id="portfolio-header-label">Portfolio</h1>
+    <div class="input-group-prepend">
+        <button class="btn btn-outline-secondary" type="button" id="refresh-portfilio-button">Refresh</button>
+    </div>
 </nav>
-
-
+<table id="portfolio-table" class="table table-striped table-dark">
+    <thead>
+      <tr>
+        <th scope="col"></th>
+        <th scope="col">Stock</th>
+        <th scope="col">Price $</th>
+        <th scope="col">Share #</th>
+        <th scope="col">Total $</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th scope="row">1</th>
+            <td>GOOGL</td>
+            <td>1428.50</td>
+            <td>150</td>
+            <td>214,275.00</td>
+        </tr>
+        <tr>
+            <th scope="row">2</th>
+            <td>MMM</td>
+            <td>168.54</td>
+            <td>128</td>
+            <td>21,573.12</td>
+        </tr>
+        <tr>
+            <th scope="row">3</th>
+            <td>NFLX</td>
+            <td>407.84</td>
+            <td>75</td>
+            <td>30,588.00</td>
+        </tr>
+    </tbody>
+</table>
+  
 <script src="../scripts/portfolio.js"></script>

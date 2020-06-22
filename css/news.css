@@ -2,3 +2,89 @@
     font-family: 'Righteous', cursive;
 }
 
+#country-label {
+    font-family: 'Righteous', cursive;
+}
+
+#country {
+    font-family: 'Cantarell', sans-serif;
+}
+
+#categorie-label {
+    font-family: 'Righteous', cursive;
+}
+
+#categorie {
+    font-family: 'Cantarell', sans-serif;
+}
+
+#search-field-label {
+    font-family: 'Righteous', cursive;
+}
+
+#search-field {
+    font-family: 'Cantarell', sans-serif;
+}
+
+#search-button {
+    border: 2px solid #287d8a;
+    border-radius: 2px;;
+    color: #287d8a;
+    margin-left: 10px;
+    font-family: 'Cantarell', sans-serif;
+}
+
+#message {
+    margin-left: 25px;
+    font-size: 14px;
+    font-family: 'Cantarell', sans-serif;
+    color: #999999;
+}
+
+#no-results-message {
+    margin-left: 25px;
+    font-size: 30px;
+    font-family: 'Cantarell', sans-serif;
+    color: #999999;
+}
+
+.result-container {
+    background-color: white;
+    margin-left: 25px;
+    margin-right: 25px;
+    border: solid #999999;
+    border-width: 2px;
+    border-radius: 5px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding-bottom: 25px;
+}
+
+.article-image {
+    width: 95%;
+    height: 350px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.article-title {
+    font-family: 'Cantarell', sans-serif;
+    font-size: 20px;
+    margin-top: 25px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.article-author {
+    font-family: 'Righteous', cursive;
+    color: #777777;
+    font-size: 15px;
+}
+
+.article-description {
+    font-family: 'Righteous', cursive;
+    color: #777777;
+    font-size: 15px;
+}

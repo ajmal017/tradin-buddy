@@ -1,4 +1,96 @@
+<!--TODO: Integrate with google news API-->
+<!--TODO: Show search results-->
 <nav id="header" class="navbar navbar-light bg-light">
     <h1 id="news-header-label">News</h1>
 </nav>
+<div class="row" style="margin-bottom: 50px;">
+    <div class="col-12">
+        <div class="input-group-append" style="margin-left: 50px; margin-right: 50px; margin-top: 40px;">
+            <div class="col-3">
+                <label id="country-label" for="country">Country</label>
+                <select class="form-control" id="country">
+                    <option>Any</option>
+                    <option>United States (us)</option>
+                    <option>Canada (ca)</option>
+                    <option>Arab Emirates (ae)</option>
+                    <option>Argentina (ar)</option>
+                    <option>Austria (au)</option>
+                    <option>Australia (as)</option>
+                    <option>Belgium (be)</option>
+                    <option>Bulgaria (bu)</option>
+                    <option>Brezil (br)</option>
+                    <option>Switzerland (ch)</option>
+                    <option>China (cn)</option>
+                    <option>Columbia (co)</option>
+                    <option>Cuba (cu)</option>
+                    <option>Czechia (cz)</option>
+                    <option>Germany (de)</option>
+                    <option>Egypt (eg)</option>
+                    <option>France (fr)</option>
+                    <option>Great Britain (gb)</option>
+                    <option>Greece (gr)</option>
+                    <option>Hong Kong (hk)</option>
+                    <option>Hungary (hu)</option>
+                    <option>Indonesia (id)</option>
+                    <option>Ireland (ie)</option>
+                    <option>Israel (il)</option>
+                    <option>India (in)</option>
+                    <option>Italy (it)</option>
+                    <option>Japan (jp)</option>
+                    <option>Korea (kr)</option>
+                    <option>Lithuania (lt)</option>
+                    <option>Latvia (lv)</option>
+                    <option>Morocco (ma)</option>
+                    <option>Mexico (me)</option>
+                    <option>Malaysia (my)</option>
+                    <option>Nigeria (ng)</option>
+                    <option>Netherlands (nl)</option>
+                    <option>Norway (no)</option>
+                    <option>New Zealand (za)</option>
+                    <option>Philippines (ph)</option>
+                    <option>Poland (pl)</option>
+                    <option>Portugal (pt)</option>
+                    <option>Romania (ro)</option>
+                    <option>Russia (ru)</option>
+                    <option>Serbia (sa)</option>
+                    <option>South Africa (sa)</option>
+                    <option>Sweden (se)</option>
+                    <option>Singapor (sg)</option>
+                    <option>Slovania (si)</option>
+                    <option>Slovakia (sk)</option>
+                    <option>Thailand (th)</option>
+                    <option>Turkey (tr)</option>
+                    <option>Taiwan (tw)</option>
+                    <option>Venezuala (ve)</option>
+                    <option>Ukraine (uk)</option>
+                </select>
+            </div>
+            <div class="col-3">
+                <label id="categorie-label" for="categorie">Categorie</label>
+                <select class="form-control" id="categorie">
+                    <option>Any</option>
+                    <option>business</option>
+                    <option>entertainment</option>
+                    <option>general</option>
+                    <option>health</option>
+                    <option>science</option>
+                    <option>sports</option>
+                    <option>technology</option>
+                </select>
+            </div>
+            <div class="col-5">
+                <label id="search-field-label" for="search-field">Search</label>
+                <div class="input-group-prepend">
+                    <input id="search-field" type="text" class="form-control" placeholder="Enter search term..." aria-label="Choose ticket symbol" aria-describedby="button-ticker-search">
+                    <button class="btn btn-outline-secondary" type="button" id="search-button">Search</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="error-container"></div> 
+<hr class="my-4 bs-seperator" style="margin-left: 0px;">
+<p id="message">Currently, Tradin' Buddy only retreives News articles qualified as 'Top Headlines'.</p>
+<div id="search-results-container" class="row" style="margin-left:25px;"></div>
+<object id='creds-content' data="../credentials.txt" style="opacity: 0;"></object>
 <script src="../scripts/news.js"></script>

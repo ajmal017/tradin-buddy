@@ -3,7 +3,6 @@
 }
 
 #search-stx-container {
-    flex: 1;
     background-color: white;
     margin-left: 25px;
     margin-right: 25px;
@@ -23,7 +22,6 @@
 }
 
 #order-stx-container {
-    flex: 1;
     background-color: white;
     margin-left: 25px;
     margin-right: 25px;
@@ -33,7 +31,7 @@
     margin-top: 25px;
     margin-bottom: 25px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    padding-bottom: 100px;
+    padding-bottom: 50px;
 }
 
 #order-header-label {
@@ -68,4 +66,78 @@
     margin-left: 25px;
     margin-top: 20px;
     font-family: 'Righteous', cursive;
+}
+
+#inverval-button {
+    margin-left: 25px;
+}
+
+.buy-sell-label {
+    font-family: 'Lexend Tera', sans-serif;
+    font-size: 40px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.bs-seperator {
+    margin-left: 20px;
+    margin-right: 30px;
+}
+
+
+#buy-order {
+    font-family: 'Lexend Tera', sans-serif;
+}
+
+#sell-order {
+    font-family: 'Lexend Tera', sans-serif;
+}
+
+.order-input {
+    font-family: 'Cantarell', sans-serif;
+    font-weight: 300;
+}
+
+.total-labels {
+    margin-left: 30px;
+    margin-top: 50px;
+}
+
+#buy-total-label {
+    font-family: 'Cantarell', sans-serif;
+}
+
+#sell-total-label {
+    font-family: 'Cantarell', sans-serif;
+}
+
+#input-bid-order-button {
+    margin-left: 20px;
+    background-color: #bbfabf;
+    border: #57c95e solid 2px;
+    color: #57c95e;
+    border-radius: 3px;
+}
+
+#input-ask-order-button {
+    margin-left: 20px;
+    background-color: #fab1b1;
+    border: #ed5151 solid 2px;
+    color: #ed5151;
+    border-radius: 3px;
+}
+
+.order-button {
+    margin-top: 30px;
+    width: 90%;
+}
+
+.pending-buy-row {
+    background-color: #bbfabf;
+    color: #57c95e;
+}
+
+.pending-sell-row {
+    background-color: #fab1b1;
+    color: #ed5151;
 }

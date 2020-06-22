@@ -1,3 +1,7 @@
+<!--TODO: Add button-->
+<!--TODO: Add ticker button input-->
+<!--TODO: Allow input fonts only to enter numbers-->
+<!--TODO: Show currently implementing trading strategy and auto refresh history & pending onTrade-->
 <nav id="header" class="navbar navbar-light bg-light">
     <h1 id="dashboard-header-label">Dashboard</h1>
 </nav>
@@ -8,7 +12,6 @@
             Query
         </h3>
     </nav>
-    <!--TODO: input field (ticker symbol) with results (max: 10) in horizontal tableview-->
     <h5 id="dash-search-label">Search Stock</h5>
     <div id="input-group-search" class="input-group mb-3">
         <input id="ticker-search-field" type="text" class="form-control" placeholder="Choose ticker symbol..." aria-label="Choose ticket symbol" aria-describedby="button-ticker-search">
@@ -16,9 +19,11 @@
             <button class="btn btn-outline-secondary" type="button" id="button-ticker-search">Search</button>
         </div>
     </div>
-    <div id="error-container"></div>
+    <div id="error-container"></div>     
     <hr class="my-4">
-    <div id="stock-graph-container"></div>
+    <div id="stock-graph-container">
+        <canvas id="myChart" height="100px;"></canvas>
+    </div>
 </div>
 <hr class="my-4">
 <div id="order-stx-container">
@@ -28,6 +33,158 @@
             Order
         </h3>
     </nav>
+    <div class="row">
+        <div class="col-md-6">
+            <h2 class="buy-sell-label">Buy</h2>
+            <hr class="my-4 bs-seperator">
+            <div class="input-group mb-3" style="margin-left: 20px; width: 90%;">
+                <input id="buy-share-total" type="text" class="form-control order-input" placeholder="Choose number of shares..." aria-label="share-number" aria-describedby="buy-order">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="buy-order">@</span>
+                </div>
+                <input id="buy-share-price" type="text" class="form-control order-input" placeholder="Choose bid price per share..." aria-label="share-price" aria-describedby="buy-order">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="buy-order">$</span>
+                </div>
+            </div>
+            <div class="total-labels">
+                <h3 id="buy-total-label">Total: 0.00 $</h3>
+            </div>
+            <div>
+                <button id="input-bid-order-button" class="btn btn-primary btn-lg btn-block order-button" type="button">Buy</button>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <h2 class="buy-sell-label">Sell</h2>
+            <hr class="my-4 bs-seperator">
+            <div class="input-group mb-3" style="margin-left: 20px; width: 90%;">
+                <input id="sell-share-total" type="text" class="form-control order-input" placeholder="Choose number of shares..." aria-label="share-number" aria-describedby="sell-order">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="sell-order">@</span>
+                </div>
+                <input id="sell-share-price" type="text" class="form-control order-input" placeholder="Choose ask price per share..." aria-label="share-price" aria-describedby="sell-order">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="sell-order">$</span>
+                </div>
+            </div>
+            <div class="total-labels">
+                <h3 id="sell-total-label">Total: 0.00 $</h3>
+            </div>
+            <div>
+                <button id="input-ask-order-button" class="btn btn-primary btn-lg btn-block order-button" type="button">Sell</button>
+            </div>
+        </div>
+    </div>
+    <!--TODO: Add pending and historical entries-->
+    <hr class="my-4 bs-seperator">
+    <div class="row">
+        <div class="col-md-12">
+            <h5 class="buy-sell-label" style="margin-bottom: 50px;">
+                <ion-icon name="hourglass-outline"></ion-icon>
+                Pending
+            </h5>
+            <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col"></th>
+                    <th scope="col">Stock</th>
+                    <th scope="col">Price</th>
+                    <th scope="col">Share #</th>
+                    <th scope="col">Order type</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="pending-buy-row">
+                    <th scope="row">1</th>
+                    <td>GOOGL</td>
+                    <td>1428.50</td>
+                    <td>150</td>
+                    <td>Buy</td>
+                  </tr>
+                  <tr class="pending-sell-row">
+                    <th scope="row">2</th>
+                    <td>MMM</td>
+                    <td>168.54</td>
+                    <td>128</td>
+                    <td>Sell</td>
+                  </tr>
+                  <tr class="pending-buy-row">
+                    <th scope="row">3</th>
+                    <td>NFLX</td>
+                    <td>407.84</td>
+                    <td>75</td>
+                    <td>Buy</td>
+                  </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <hr class="my-4 bs-seperator">
+    <div class="row">
+        <div class="col-md-12">
+            <h5 class="buy-sell-label" style="margin-bottom: 50px;">
+                <ion-icon name="time-outline"></ion-icon>
+                History
+            </h5>
+            <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col"></th>
+                    <th scope="col">Stock</th>
+                    <th scope="col">Price</th>
+                    <th scope="col">Share #</th>
+                    <th scope="col">Order type</th>
+                  </tr>
+                </thead>
+                <tbody>
+                <tr class="pending-buy-row">
+                    <th scope="row">1</th>
+                        <td>NFLX</td>
+                        <td>407.84</td>
+                        <td>75</td>
+                        <td>Buy</td>
+                    </tr>
+                    <tr class="pending-buy-row">
+                        <th scope="row">2</th>
+                        <td>AAPL</td>
+                        <td>330.50</td>
+                        <td>150</td>
+                        <td>Buy</td>
+                    </tr>
+                    <tr class="pending-sell-row">
+                        <th scope="row">3</th>
+                        <td>AMZN</td>
+                        <td>2554.70</td>
+                        <td>224</td>
+                        <td>Sell</td>
+                    </tr>
+                    <tr class="pending-sell-row">
+                        <th scope="row">4</th>
+                        <td>SHOP</td>
+                        <td>953.44</td>
+                        <td>44</td>
+                        <td>Sell</td>
+                    </tr>
+                    <tr class="pending-buy-row">
+                        <th scope="row">5</th>
+                        <td>GOOGL</td>
+                        <td>1428.50</td>
+                        <td>150</td>
+                        <td>Buy</td>
+                    </tr>
+                    <tr class="pending-sell-row">
+                        <th scope="row">6</th>
+                        <td>MMM</td>
+                        <td>168.54</td>
+                        <td>128</td>
+                        <td>Sell</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
 </div>
 <object id='creds-content' data="../credentials.txt" style="opacity: 0;"></object>
 <script src="../scripts/dashboard.js"></script>
+<!--Chart.js Script-->
+<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
